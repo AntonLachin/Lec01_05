@@ -12,7 +12,7 @@ public class WhiteBoxTest {
 
     private WhiteBox wb;
 
-////     first task
+//     first task
     @Test
     public void testFindTaskOneOne() {
         int[] a = null;

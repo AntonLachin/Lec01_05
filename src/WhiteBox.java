@@ -1,6 +1,6 @@
 
 public class WhiteBox {
-	/// requires: None
+	// requires: None
 	// modifies: None
 	// effects: None
 	// returns: i such that a[i] == value if value is in a;
