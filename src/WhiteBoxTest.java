@@ -12,38 +12,32 @@ public class WhiteBoxTest {
 
     private WhiteBox wb;
 
-    // first task
+//     first task
     @Test
-    public void testFindTaskOne() {
-        int[] a = null;
-        assertThrows(IllegalArgumentException.class, () -> wb.find(a, 2, 5));
-    }
-
-    //	 second task
-    @Test
-    public void testFindTaskTwoOne() {
+    public void testFindTaskOneOne() {
         int[] a = null;
         assertThrows(IllegalArgumentException.class, () -> wb.find(a, 2, 5));
     }
 
     @Test
-    public void testFindTaskTwoTwo() {
-        int[] a = new int[]{2, 4};
+    public void testFindTaskOneTwo() {
+        int a = wb.find(new int[] {2, 5, -10}, 3, 3);
+        assertEquals(-1, a);
+    }
+//   	 second task
+
+    @Test
+    public void testFindTaskTwo() {
+        int[] a = {2, 4};
         int i = wb.find(a, 2, 4);
         assertEquals(1, i);
     }
 
-    //	 third task
+//    	 third task
     @Test
-    public void testFindTaskThreeOne() {
-        int[] a = null;
-        assertThrows(IllegalArgumentException.class, () -> wb.find(a, 2, 5));
-    }
-
-    @Test
-    public void testFindTaskThreeTwo() {
-        int[] a = new int[]{2, 4};
-        int i = wb.find(a, 2, 4);
-        assertEquals(-1, i);
+    public void testFindTaskThree() {
+        int[] a = {3};
+        int i = wb.find(a, 1, 3);
+        assertEquals(0, i);
     }
 }
