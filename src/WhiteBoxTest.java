@@ -12,7 +12,7 @@ public class WhiteBoxTest {
 
     private WhiteBox wb;
 
-//     first task
+////     first task
     @Test
     public void testFindTaskOneOne() {
         int[] a = null;
@@ -24,7 +24,7 @@ public class WhiteBoxTest {
         int a = wb.find(new int[] {2, 5, -10}, 3, 3);
         assertEquals(-1, a);
     }
-//   	 second task
+////   	 second task
 
     @Test
     public void testFindTaskTwo() {
@@ -33,7 +33,7 @@ public class WhiteBoxTest {
         assertEquals(1, i);
     }
 
-//    	 third task
+////    	 third task
     @Test
     public void testFindTaskThree() {
         int[] a = {3};
